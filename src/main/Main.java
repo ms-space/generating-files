@@ -16,7 +16,7 @@ public class Main {
 
         for (int i = START_SUFFIX; i <= END_SUFFIX; i++) {
             Map<String, String> data = addSuffix(getValues(), i);
-            Path file = Path.of(PATH, data.get("user"));
+            Path file = Path.of(PATH, data.get(FILE_NAME));
             Files.write(file, "".getBytes());
             Files.write(file, formatData(data).getBytes(), StandardOpenOption.APPEND);
         }

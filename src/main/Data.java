@@ -4,9 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Data {
-
     //Filed names
-    public static final String FILE_NAME = "user";
+    public static final String FILE_NAME = "name";
     public static final String PASSWORD = "password";
     public static final String FIRSTNAME = "firstname";
     public static final String LASTNAME = "lastname";
@@ -22,7 +21,7 @@ public class Data {
     public static final String VALUE_5 = "City";
 
     public static final int START_SUFFIX = 1;
-    public static final int END_SUFFIX = 99;
+    public static final int END_SUFFIX = 10;
     public static final String PATH = "./data-out/";
 
     public static Map<String, String> getValues() {
